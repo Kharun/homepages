@@ -1,86 +1,125 @@
-// ======================================== 1
-// let salaries = {
-//     John: 100,
-//     Ann: 160,
-//     Pete: 130
-// };
+//======================================== 1
+// let massiv = [1,2,3,4,5]
+// for (let i = 0; i < massiv.length; i++) {
+//     console.log(massiv[i])
+// }
 
-// let sum = 0;
-// for (let salary of Object.values(salaries)) {
-//     sum += salary;
+
+//======================================== 2
+// let massiv = [1,2,3,4,5]
+
+// let result = 0
+// for (let i = 0; i < massiv.length; i++) {
+//     result += massiv[i]
+// }
+
+// console.log(result)
+
+
+//======================================== 3
+// let i = 0;
+// while (i < 3) {
+//     console.log(`number ${i}`);
+//     i++;
+// }
+
+
+
+//======================================== 4
+// let arr = [-2,7,9,5,8,1,12,15,17,3]
+// for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] > 0 && arr[i] < 10) {
+//         console.log(arr[i])
+//     }
+// }
+
+
+//======================================== 5
+// for (let i = 1; i <= 10; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i)
+//     }
+// }
+
+//======================================== 6
+// let sum = 1;
+// for (let i = 0; i <= 100; ++i) {
+//     sum += i
 // }
 
 // console.log(sum)
 
 
-// ======================================== 2
-// let obj = {name:'Ivan', age: 26}
-// console.log(obj.name)
+//======================================== 7
+// let arr = ['BMW', 'Mersedes', 'Opel', 'Mazda', 'FIAT', 'Ferarri', 'Reno']
+
+// let newArr = arr.filter(item => item === item.toUpperCase())
+
+// console.log(newArr)
 
 
-// ======================================== 3
-// let obj = {name:'Ivan', age: 26}
+//======================================== 8
+// let arr = [2,3,4,5,6,7];
+// let newArr = [];
 
-// obj.age += 5;
-// console.log(obj.age)
+// for (let i = 0; i < arr.length; i++) {
+//     if(arr[i] !== 5) {
+//         arr[i] *= 2
+//     }
+//     newArr.push(arr[i])
+// } 
+// console.log(newArr)
 
-
-// ======================================== 4
-// let obj = {name:'Ivan', age: 26, student: true}
-// obj = {...obj, student: !obj.student}
-// console.log(obj)
-
-
-// ======================================== 5
-// let obj = {name:'ABRACADABRA', age: 15, student: true}
-
-// console.log(obj.name.includes('BRAC'))
-
-
-// ======================================== 6
-// let obj = {name:'Ivan', age: 26, student: true}
-
-// console.log(Object.keys(obj))
-// console.log(Object.values(obj))
-// console.log(Object.entries(obj))
-
-
-// ======================================== 7
-// let obj = {name:'Ivan', age: 26, student: true}
-
-// let clone = {}
-// for (let key in obj) {
-//     clone[key] = obj[key]
+// for (let i = 0; i < arr.length; i++) {
+//     if(newArr[i] % 2 === 0) {
+//         console.log(newArr[i])
+//     }
 // }
-// clone.name = 'Kharun'
-
-// console.log(clone)
 
 
-// ======================================== 8
-// let cars = ['bmw', 'honda','mers','lexus']
-
-// let last = cars.pop()
-// console.log(cars)
-
-
-// ======================================== 9
-// let cars = ['bmw', 'honda','mers','lexus']
-// console.log(cars.pop())
+//======================================== 8
+// let arr = [-2, 7, '9б', 'Vlad', 1, 12, 15, 'Ivan', 17, 3]
+// for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === 'string') {
+//         console.log(arr[i])
+//     }
+// }
 
 
-// ======================================== 10
-// let cars = ['bmw', 'honda','mers','lexus']
-// cars.splice(1, 1, 'toyota')
-// console.log(cars)
+//======================================== 9
+// let days = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс']
+
+// for (let i = 0; i < days.length; i++) {
+//     days.splice(5, 2, 'Выходной', 'Выходной')
+// }
+
+// console.log(days)
 
 
-// ======================================== 11
-// let cars = ['bmw', 'honda','mers','lexus']
-// cars.unshift('kia')
-// console.log(cars)
+//======================================== 10
+// let arr = ['Наташа','Анастасия','Дмитрий','Максим']
+
+// for (let i = 0; i < arr.length; i++) {
+//     if(arr[i] !== 'Наташа') {
+//         console.log(arr[i])
+//     }
+// }
 
 
-// ======================================== 11
-// let cars = ['bmw', 'honda','mers','lexus']
-// console.log(cars.length)
+//======================================== 11
+// let arr = ['Наташа', 'Анастасия', 2, 'Максим', 4]
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr.sort()
+// }
+
+// console.log(arr)
+
+
+//======================================== 12
+// let sum = 5;
+// for (let i = 5; i <= 5; i++) {
+//     for(let j = 2; j <= 10; j++) {
+//         console.log(`${i} x ${j} = ${i * j}`)
+//     }
+// }
